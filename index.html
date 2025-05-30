@@ -1452,18 +1452,8 @@
 					const feedback = document.getElementById('formFeedback');
 					const submitBtn = form.querySelector('button[type="submit"]');
 					
-					// Set reply-to dynamically
-					document.getElementById('reply-to').value = form.email.value;
-					
-					// Set the subject based on dropdown selection
-					const subjectSelect = form.querySelector('#subject');
-					const customSubject = `New contact from REDONGRA website: ${subjectSelect.options[subjectSelect.selectedIndex].text}`;
-					form.querySelector('input[name="_subject"]').value = customSubject;
-					
-					// Disable button during submission
 					submitBtn.disabled = true;
 					submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-					feedback.innerHTML = '';
 					
 					try {
 							const response = await fetch(form.action, {
@@ -1477,20 +1467,18 @@
 							if (response.ok) {
 									feedback.innerHTML = `
 											<div style="color: var(--accent);">
-													<i class="fas fa-check-circle"></i> Thank you! Your message has been sent.
+													<i class="fas fa-check-circle"></i> Message sent successfully!
 													You should receive a confirmation email shortly.
-											</div>
-									`;
+											</div>`;
 									form.reset();
 							} else {
-									throw new Error('Form submission failed. Please try again later.');
+									throw new Error('Submission failed');
 							}
 					} catch (error) {
 							feedback.innerHTML = `
 									<div style="color: #ff6b6b;">
 											<i class="fas fa-exclamation-circle"></i> Error: ${error.message}
-									</div>
-							`;
+									</div>`;
 					} finally {
 							submitBtn.disabled = false;
 							submitBtn.innerHTML = 'Send Message';
