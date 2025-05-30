@@ -1247,10 +1247,13 @@
 						<div class="content-section">
 								<h2 class="section-title">Contact Us</h2>
 								
-								<form id="contactForm" action="https://formspree.io/f/mpwrazkv" method="POST" class="contact-form">
+								<form id="contactForm" action="https://formsubmit.co/redongra@zohomail.eu" method="POST" class="contact-form">
 										<input type="hidden" name="_subject" value="New contact from REDONGRA website">
-										<input type="hidden" name="_replyto" id="reply-to">
 										<input type="hidden" name="_cc" value="redongra@zohomail.eu">
+										<input type="hidden" name="_replyto" id="reply-to">
+										<input type="hidden" name="_template" value="table">
+										<input type="hidden" name="_autoresponse" value="Thank you for contacting REDONGRA. We'll get back to you soon.">
+										<input type="hidden" name="_next" value="https://yourgithubusername.github.io/thanks.html">
 										
 										<div class="form-group">
 												<label for="name">Full Name *</label>
@@ -1433,71 +1436,57 @@
     </script>
 		
 		<script>
-		// Contact form handling for Formspree
-		document.getElementById('contactForm').addEventListener('submit', async function(e) {
-				e.preventDefault();
-				const form = this;
-				const feedback = document.getElementById('formFeedback');
-				const submitBtn = form.querySelector('button[type="submit"]');
-				
-				// Set reply-to dynamically
-				document.getElementById('reply-to').value = form.email.value;
-				
-				// Get the selected subject from dropdown
-				const subject = form.querySelector('#subject').value;
-				form.querySelector('input[name="_subject"]').value = subject;
-				
-				// Disable button during submission
-				submitBtn.disabled = true;
-				submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-				feedback.innerHTML = '';
-				
-				try {
-						// Add debug logging
-						console.log('Form data:', {
-								name: form.name.value,
-								email: form.email.value,
-								institution: form.institution.value,
-								subject: subject,
-								message: form.message.value
-						});
-
-						const response = await fetch(form.action, {
-								method: 'POST',
-								body: new FormData(form),
-								headers: {
-										'Accept': 'application/json'
-								}
-						});
-						
-						if (response.ok) {
-								feedback.innerHTML = `
-										<div style="color: var(--accent);">
-												<i class="fas fa-check-circle"></i> Thank you! Your message has been sent. 
-												You'll receive a confirmation email shortly.
-										</div>
-								`;
-								form.reset();
-								
-								// Debug - check if Formspree has confirmed your email
-								console.log('Form submitted successfully. Check your email (' + form.email.value + ') for a confirmation request from Formspree.');
-						} else {
-								const error = await response.json();
-								console.error('Form submission error:', error);
-								throw new Error(error.error || 'Form submission failed');
-						}
-				} catch (error) {
-						console.error('Error:', error);
-						feedback.innerHTML = `
-								<div style="color: #ff6b6b;">
-										<i class="fas fa-exclamation-circle"></i> Error: ${error.message}
-								</div>
-						`;
-				} finally {
-						submitBtn.disabled = false;
-						submitBtn.innerHTML = 'Send Message';
-				}
-		});
+			// Contact form handling with FormSubmit
+			document.getElementById('contactForm').addEventListener('submit', async function(e) {
+					e.preventDefault();
+					const form = this;
+					const feedback = document.getElementById('formFeedback');
+					const submitBtn = form.querySelector('button[type="submit"]');
+					
+					// Set reply-to dynamically
+					document.getElementById('reply-to').value = form.email.value;
+					
+					// Set the subject based on dropdown selection
+					const subjectSelect = form.querySelector('#subject');
+					const customSubject = `New contact from REDONGRA website: ${subjectSelect.options[subjectSelect.selectedIndex].text}`;
+					form.querySelector('input[name="_subject"]').value = customSubject;
+					
+					// Disable button during submission
+					submitBtn.disabled = true;
+					submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+					feedback.innerHTML = '';
+					
+					try {
+							const response = await fetch(form.action, {
+									method: 'POST',
+									body: new FormData(form),
+									headers: {
+											'Accept': 'application/json'
+									}
+							});
+							
+							if (response.ok) {
+									feedback.innerHTML = `
+											<div style="color: var(--accent);">
+													<i class="fas fa-check-circle"></i> Thank you! Your message has been sent.
+													You should receive a confirmation email shortly.
+											</div>
+									`;
+									form.reset();
+							} else {
+									throw new Error('Form submission failed. Please try again later.');
+							}
+					} catch (error) {
+							feedback.innerHTML = `
+									<div style="color: #ff6b6b;">
+											<i class="fas fa-exclamation-circle"></i> Error: ${error.message}
+									</div>
+							`;
+					} finally {
+							submitBtn.disabled = false;
+							submitBtn.innerHTML = 'Send Message';
+					}
+			});
 		</script>
 </body>
 </html>
