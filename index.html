@@ -700,790 +700,810 @@
     </style>
 </head>
 <body>
-    <!-- Background elements -->
-    <div id="wave-background">
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-    </div>
-    <div class="stars" id="stars"></div>
-    
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <div class="logo">
-                <img src="Figures/Horizontal-v1.1.png" alt="REDONGRA Logo" class="logo-img">
-                <div>
-                    <div class="logo-text">Red Española de Fisica de Ondas Gravitacionales (REDONGRA)</div>
-                    <div class="logo-subtitle"><strong>Spanish Network of Gravitational Wave Physics (REDONGRA)</strong></div>
-                </div>
-            </div>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
-            
-            <nav>
-                <ul id="navMenu">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#participants">Participants</a></li>
-                    <li><a href="#objectives">Objectives</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                    <li><a href="#materials">Materials</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home">
-            <div class="hero">
-                <h1>Exploring the Universe through Gravitational Waves</h1>
-                <p>REDONGRA is a collaborative network involving the different Spanish research groups advancing all the aspects of Gravitational Wave Astronomy: Theory, data analysis, detector technology, simulations, etc.</p>
-                <a href="#participants" class="btn">Discover Our Network</a>
-            </div>
-            
-            <div class="content-section">
-                <h2 class="section-title">About our Collaboration</h2>
-                <p>The Spanish Gravitational Wave Network (REDONGRA) brings together research groups across Spain to advance our understanding of the Universe through the detection and analysis of Gravitational Waves. Our collaboration combines expertise in Theoretical Physics, Astrophysics, Data Analysis, Detector Technology, and Computational Physics to contribute to the global effort in this exciting new field of Astronomy. If you would like to keep updated about the activities of the network please <a href="#contact" class="custom-link">CONTACT</a> us. </p>
-                
-                <div class="section-grid" style="margin-top: 40px;">
-                    <div class="card">
-                        <h3><i class="fas fa-satellite card-icon"></i> Our Mission</h3>
-                        <p>To establish Spain as a key contributor in Gravitational Wave research through coordinated efforts, resource sharing, and scientific collaboration.</p>
-                    </div>
-                    <div class="card">
-                        <h3><i class="fas fa-users card-icon"></i> Collaboration</h3>
-                        <p>We unite researchers from more than 20 institutions across Spain, fostering interdisciplinary approaches to Gravitational Wave science.</p>
-                    </div>
-                    <div class="card">
-                        <h3><i class="fas fa-globe-europe card-icon"></i> Global Impact</h3>
-                        <p>As partners in international projects like LIGO, Virgo, Einstein Telescope, LISA, and others, we aim at contributing to ground-breaking discoveries in Astrophysics, Cosmology, and Fundamental Physics.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Participants Section -->
-        <section id="participants">
-            <div class="content-section">
-                <h2 class="section-title">Participating Institutions in REDONGRA</h2>
-                <div class="section-grid">
-                    <div class="card institution-card">
-                        <div class="institution-header">
-                            <a href="https://www.ice.csic.es" target="_blank" rel="noopener noreferrer" class="institution-link">
-                                <div class="institution-logo">
-                                    <img src="Figures/ICE-CSIC-logo-v1.png" alt="ICE-CSIC Logo">
-                                </div>
-                                <div class="institution-name">Institute of Space Sciences (ICE-CSIC)</div>
-                            </a>
-                        </div>
-                        <p class="institution-pi">PI: Carlos F. Sopuerta (Network Coordinator)</p>
-                        <p><strong>Groups:</strong> Gravitational Astronomy-LISA Group</p>
-                        <div class="institution-members">
-                            <strong>Projects/Research Focus:</strong>
-                            <p>LISA Pathfinder, LISA, LIGO, Einstein Telescope; Instrumentation, Numerical Simulations, Data Analysis, Theory.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card institution-card">
-                        <div class="institution-header">
-                            <a href="https://www.ciemat.es" target="_blank" rel="noopener noreferrer" class="institution-link">
-                                <div class="institution-logo">
-                                    <i class="fas fa-atom"></i>
-                                </div>
-                                <div class="institution-name">Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)</div>
-                            </a>
-                        </div>
-                        <p class="institution-pi">PI: Pablo García Abia</p>
-                        <p><strong>Groups:</strong> </p>
-                        <div class="institution-members">
-                            <strong>Projects/Research Focus:</strong>
-                            <p>Virgo, Einstein Telescope; Instrumentation, Computing, Primordial Black Holes.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card institution-card">
-                        <div class="institution-header">
-                            <a href="https://www.iaa.csic.es" target="_blank" rel="noopener noreferrer" class="institution-link">
-                                <div class="institution-logo">
-                                    <i class="fas fa-atom"></i>
-                                </div>
-                                <div class="institution-name">Institute of Astrophysics of Andalusia (IAA-CSIC)</div>
-                            </a>
-                        </div>
-                        <p class="institution-pi">PI: María Dolores Caballero García</p>
-                        <p><strong>Groups:</strong> Robotic Astrophysics and High Energy Group</p>
-                        <div class="institution-members">
-                            <strong>Projects/Research Focus:</strong>
-                            <p>INTEGRAL, THESEUS, Einstein Telescope; multi-messenger follow-up of GW sources.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card institution-card">
-                        <div class="institution-header">
-                            <a href="https://www.iac.es/en" target="_blank" rel="noopener noreferrer" class="institution-link">
-                                <div class="institution-logo">
-                                    <i class="fas fa-flask"></i>
-                                </div>
-                                <div class="institution-name">Instituto de Astrofísica de Canarias (IAC)</div>
-                            </a>
-                        </div>
-                        <p class="institution-pi">PI: Josefa Becerra González</p>
-                        <p><strong>Groups:</strong> </p>
-                        <div class="institution-members">
-                            <strong>Projects/Research Focus:</strong>
-                            <p>Discovery, classification and follow up of EM counterparts of GW events.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card institution-card">
-                        <div class="institution-header">
-                            <a href="https://icc.ub.edu" target="_blank" rel="noopener noreferrer" class="institution-link">
-                                <div class="institution-logo">
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <div class="institution-name">Institute of Cosmos Sciences of the University of Barcelona (ICCUB)</div>
-                            </a>
-                        </div>
-                        <p class="institution-pi">PI: Oleg Bulashenko</p>
-                        <p><strong>Groups:</strong> GW group </p>
-                        <div class="institution-members">
-                            <strong>Projects/Research Focus:</strong>
-                            <p>Virgo, ET and LISA; Instrumentation, stellar dynamics, Numerical Relativity, Nuclear Physics, data analysis and software engineering.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="card institution-card">
-                        <div class="institution-header">
-                            <a href="https://www.iem.csic.es/index_i.html" target="_blank" rel="noopener noreferrer" class="institution-link">
-                                <div class="institution-logo">
-                                    <i class="fas fa-cogs"></i>
-                                </div>
-                                <div class="institution-name">Institute for the Structure of Matter (IEM-CSIC) </div>
-                            </a>
-                        </div>
-                        <p class="institution-pi">PI: Guillermo Antonio Mena Marugán</p>
-                        <p><strong>Groups:</strong> Gravitation and Cosmology Group</p>
-                        <div class="institution-members">
-                            <strong>Projects/Research Focus:</strong>
-                            <p>LISA, Einstein Telescope; theory</p>
-                        </div>
-                    </div>
-										
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.ifae.es" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Institut de Física d’Altes Energies (IFAE)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Mario Martínez Pérez</p>
-												<p><strong>Groups:</strong> GW Group</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>Virgo, LIGO, Einstein Telescope; Instrumentation, data analysis, theory, cosmology.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://ifca.unican.es/en-us" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Institute of Physics of Cantabria (IFCA-CSIC/UC)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: José María Diego Rodríguez</p>
-												<p><strong>Groups:</strong>  </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>Einstein Telescope; primordial black holes, gravitational lensing of GWs.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://webific.ific.uv.es/web/en" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name"> Instituto de Física Corpuscular (IFIC-CSIC/UV)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Agustín Sánchez Losa</p>
-												<p><strong>Groups:</strong> Valencia Experimental Group of Astroparticles (VEGA)</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>ANTARES, KM3NeT, Einstein Telescope; multi-messenger astronomy with high-energy neutrinos and GWs.</p>
-												</div>
-										</div>
-
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.ift.uam-csic.es/en/front" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Institute for Theoretical Physics (IFT-CSIC/UAM)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Juan García-Bellido Capdevila</p>
-												<p><strong>Groups:</strong> </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>Virgo, LISA and Einstein Telescope; cosmology, primordial black holes, data analysis.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://igfae.usc.es/igfae/en/" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Instituto Galego de Física de Altas Enerxías (IGFAE)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Thomas Dent</p>
-												<p><strong>Groups:</strong> </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>LIGO, Einstein Telescope; data analysis, modeling, fundamental physics.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.ua.es/en/" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">University of Alicante (UA)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Arthur Suvorov</p>
-												<p><strong>Groups:</strong> Relativistic Astrophysics Group</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>LISA, Einstein Telescope; astrophysics of compact objects, fundamental physics with GWs.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.uca.es/?lang=en" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Universidad de Cádiz (UCA)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Ignacio Mateos Martín</p>
-												<p><strong>Groups:</strong> </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>LISA; instrumentation.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.ugr.es/en" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">University of Granada (UGR)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Mikael Chala</p>
-												<p><strong>Groups:</strong> </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>LISA; theoretical cosmology.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.uib.eu" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">University of the Balearic Islands</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: David Benjamin Keitel</p>
-												<p><strong>Groups:</strong> </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>LIGO, GEO600, Einstein Telescope, LISA; data analysis, numerical relativity, continuous waves searches.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.upc.edu/en?set_language=en" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Universitat Politècnica de Catalunya - BarcelonaTech (UPC)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: Juan Ramos Castro</p>
-												<p><strong>Groups:</strong> Space Science and Technology Research Group (CTE)</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>LISA Pathfinder, LISA; instrumentation</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.upm.es/internacional" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Technical University of Madrid (UPM)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: María Ester Ruiz Morales</p>
-												<p><strong>Groups:</strong> </p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>Virgo, LISA, Einstein Telescope; data analysis, primordial black holes.</p>
-												</div>
-										</div>
-
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.ehu.eus/en/en-home" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">University of the Basque Country (UPV/EHU)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: José Juan Blanco-Pillado</p>
-												<p><strong>Groups:</strong> The Early Universe Cosmology Group</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>NANOGrav, LISA, Einstein Telescope; cosmology, cosmic strings.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.usal.es" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">Universidad de Salamanca (USAL)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: María Ángeles Pérez García</p>
-												<p><strong>Groups:</strong> GW Group</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>Einstein Telescope; modeling, multimessenger astronomy.</p>
-												</div>
-										</div>
-
-										<div class="card institution-card">
-												<div class="institution-header">
-														<a href="https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html" target="_blank" rel="noopener noreferrer" class="institution-link">
-																<div class="institution-logo">
-																		<i class="fas fa-cogs"></i>
-																</div>
-																<div class="institution-name">University of Valencia (UV)</div>
-														</a>
-												</div>
-												<p class="institution-pi">PI: José Antonio Font Roda</p>
-												<p><strong>Groups:</strong> Relativistic Astrophysics Group</p>
-												<div class="institution-members">
-														<strong>Projects/Research Focus:</strong>
-														<p>Virgo, LISA, Einstein Telescope; numerical relativity, data analysis.</p>
-												</div>
-										</div>
-										
-										
-										
-                </div>
-            </div>
-        </section>
-        
-        <!-- Objectives Section -->
-        <section id="objectives">
-            <div class="content-section">
-                <h2 class="section-title">Network Objectives</h2>
-                
-                <div class="section-grid">
-                    <div class="card">
-                        <h3><i class="fas fa-chart-line card-icon"></i> Research Advancement</h3>
-                        <p>Coordinate research efforts to maximize Spain's contribution to gravitational wave science through publications, conference participation, and data analysis.</p>
-                    </div>
-                    <div class="card">
-                        <h3><i class="fas fa-graduation-cap card-icon"></i> Training & Education</h3>
-                        <p>Develop training programs for early-career researchers and organize workshops and schools to share expertise across the network.</p>
-                    </div>
-                    <div class="card">
-                        <h3><i class="fas fa-tools card-icon"></i> Technology Development</h3>
-                        <p>Advance detector technologies for future gravitational wave observatories through collaborative R&D projects.</p>
-                    </div>
-                    <div class="card">
-                        <h3><i class="fas fa-handshake card-icon"></i> International Collaboration</h3>
-                        <p>Strengthen Spain's participation in global gravitational wave projects like LIGO, Virgo, and the future LISA and Einstein Telescope projects.</p>
-                    </div>
-                </div>
-                
-                <div style="margin-top: 40px; background: rgba(26, 61, 122, 0.5); padding: 25px; border-radius: 10px; border: 1px solid rgba(74, 137, 220, 0.3);">
-                    <h3 style="color: var(--accent); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-bullseye"></i> Strategic Goals
-                    </h3>
-                    <ul style="padding-left: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
-                        <li style="margin-bottom: 10px;">To support and enhance the current existing activities between Spanish groups with the aim to increase the impact on the frontier of GW science</li>
-                        <li style="margin-bottom: 10px;">Develop Spanish contributions to the next generation of GW detectors: the Einstein Telescope project on the ground and the LISA mission in space</li>
-                        <li style="margin-bottom: 10px;">To produce a roadmap document that will identify the main activities of the Spanish GW community and a concrete path towards maximizing its impact on ET and LISA</li>
-                        <li style="margin-bottom: 10px;">Preparing the future of the Spanish GW community, within the international GW research context, by training the next generation of GW researchers</li>
-                        <li style="margin-bottom: 10px;">Increase public awareness of gravitational wave science in Spain</li>
-                        <li style="margin-bottom: 10px;">Foster industry partnerships for detector technology development</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Activities Section -->
-        <section id="activities">
-            <div class="content-section">
-                <h2 class="section-title">Network Activities</h2>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date"><i class="fas fa-calendar-alt"></i> June 23-25, 2025</div>
-                            <h3>Iberian Gravitational Wave Meeting</h3>
-                            <p>CIEMAT, Madrid - All network members will gather to review progress, share research updates, and plan collaborative projects for the coming year.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date"><i class="fas fa-calendar-alt"></i> September 15-16, 2025</div>
-                            <h3>GW150914 anniversary</h3>
-                            <p>University of the Balearic Islands (UIB), Palma de Mallorca - To celebrate the 10th anniversary of the GW150914 detection.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date"><i class="fas fa-calendar-alt"></i> October 20-22, 2025</div>
-                            <h3>LISA Spain Meeting</h3>
-                            <p>CSIC main Campus, Madrid - To gather the Spanish community working in LISA to develop the Spanish contribution to the mission.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date"><i class="fas fa-calendar-alt"></i> December 3rd, 2025</div>
-                            <h3>Ten years of LISA Pathfinder</h3>
-                            <p>Institute of Space Sciences - To celebrate and review the results of the LISA Pathfinder mission ten years after the launch.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date"><i class="fas fa-calendar-alt"></i> MM DD, 202X</div>
-                            <h3>Summer School on Gravitational Waves</h3>
-                            <p>PLACE - Comprehensive training program for graduate students entering the field of gravitational wave astronomy.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Materials Section -->
-        <section id="materials">
-            <div class="content-section">
-                <h2 class="section-title">Resources & Materials</h2>
-                
-                <div class="section-grid">
-                    <div class="card">
-                        <h3><i class="fas fa-book card-icon"></i> Publications</h3>
-                        <p>Access our collection of network publications, preprints, and conference proceedings.</p>
-                        <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Browse Publications</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h3><i class="fas fa-chalkboard card-icon"></i> Presentations</h3>
-                        <p>Slides and recordings from network workshops, seminars, and conferences.</p>
-                        <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">View Presentations</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h3><i class="fas fa-database card-icon"></i> Data & Software</h3>
-                        <p>Open-source software tools and simulation data developed by network members.</p>
-                        <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Access Resources</a>
-                    </div>
-                    
-                    <div class="card">
-                        <h3><i class="fas fa-video card-icon"></i> Educational Material</h3>
-                        <p>Lectures, tutorials, and outreach materials for students and the public.</p>
-                        <a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore Materials</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-				<!-- Contact Section -->
-				<section id="contact">
-						<div class="content-section">
-								<h2 class="section-title">Contact Us</h2>
+	<!-- Background elements -->
+	<div id="wave-background">
+		<div class="wave"></div>
+		<div class="wave"></div>
+		<div class="wave"></div>
+	</div>
+	<div class="stars" id="stars"></div>
+	
+	<!-- Header -->
+	<header>
+		<div class="header-container">
+			<div class="logo">
+				<img src="Figures/Horizontal-v1.1.png" alt="REDONGRA Logo" class="logo-img">
+					<div>
+						<div class="logo-text">Red Española de Fisica de Ondas Gravitacionales (REDONGRA)</div>
+						<div class="logo-subtitle"><strong>Spanish Network of Gravitational Wave Physics (REDONGRA)</strong></div>
+					</div>
+			</div>
+			
+			<button class="mobile-menu-btn" id="mobileMenuBtn">
+				<i class="fas fa-bars"></i>
+			</button>
+			
+			<nav>
+				<ul id="navMenu">
+					<li><a href="#home" class="active">Home</a></li>
+					<li><a href="#participants">Participants</a></li>
+					<li><a href="#objectives">Objectives</a></li>
+					<li><a href="#activities">Activities</a></li>
+					<li><a href="#materials">Materials</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- Main Content -->
+	<main>
+		<!-- Home Section -->
+		<section id="home">
+			<div class="hero">
+				<h1>Exploring the Universe through Gravitational Waves</h1>
+				<p>REDONGRA is a collaborative network involving the different Spanish research groups advancing all the aspects of Gravitational Wave Astronomy: Theory, data analysis, detector technology, simulations, etc.</p>
+				<a href="#participants" class="btn">Discover Our Network</a>
+			</div>
+			
+			<div class="content-section">
+				<h2 class="section-title">About our Collaboration</h2>
+				<p>The Spanish Gravitational Wave Network (REDONGRA) brings together research groups across Spain to advance our understanding of the Universe through the detection and analysis of Gravitational Waves. Our collaboration combines expertise in Theoretical Physics, Astrophysics, Data Analysis, Detector Technology, and Computational Physics to contribute to the global effort in this exciting new field of Astronomy. If you would like to keep updated about the activities of the network please <a href="#contact" class="custom-link">CONTACT</a> us. </p>
+				
+				<div class="section-grid" style="margin-top: 40px;">
+					<div class="card">
+						<h3><i class="fas fa-satellite card-icon"></i> Our Mission</h3>
+						<p>To establish Spain as a key contributor in Gravitational Wave research through coordinated efforts, resource sharing, and scientific collaboration.</p>
+					</div>
+					<div class="card">
+						<h3><i class="fas fa-users card-icon"></i> Collaboration</h3>
+						<p>We unite researchers from more than 20 institutions across Spain, fostering interdisciplinary approaches to Gravitational Wave science.</p>
+					</div>
+					<div class="card">
+						<h3><i class="fas fa-globe-europe card-icon"></i> Global Impact</h3>
+						<p>As partners in international projects like LIGO, Virgo, Einstein Telescope, LISA, and others, we aim at contributing to ground-breaking discoveries in Astrophysics, Cosmology, and Fundamental Physics.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Participants Section -->
+		<section id="participants">
+			<div class="content-section">
+				<h2 class="section-title">Participating Institutions in REDONGRA</h2>
+				<div class="section-grid">
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ice.csic.es" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<img src="Figures/ICE-CSIC-logo-v1.png" alt="ICE-CSIC Logo">
+								</div>
+								<div class="institution-name">Institute of Space Sciences (ICE-CSIC)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Carlos F. Sopuerta (Network Coordinator)</p>
+						<p><strong>Groups:</strong> Gravitational Astronomy-LISA Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LISA Pathfinder, LISA, LIGO, Einstein Telescope; Instrumentation, Numerical Simulations, Data Analysis, Theory.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ciemat.es" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-atom"></i>
+								</div>
+								<div class="institution-name">Centro de Investigaciones Energéticas, Medioambientales y Tecnológicas (CIEMAT)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Pablo García Abia</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Virgo, Einstein Telescope; Instrumentation, Computing, Primordial Black Holes.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.iaa.csic.es" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-atom"></i>
+								</div>
+								<div class="institution-name">Institute of Astrophysics of Andalusia (IAA-CSIC)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: María Dolores Caballero García</p>
+						<p><strong>Groups:</strong> Robotic Astrophysics and High Energy Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>INTEGRAL, THESEUS, Einstein Telescope; multi-messenger follow-up of GW sources.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.iac.es/en" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-flask"></i>
+								</div>
+								<div class="institution-name">Instituto de Astrofísica de Canarias (IAC)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Josefa Becerra González</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Discovery, classification and follow up of EM counterparts of GW events.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://icc.ub.edu" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-star"></i>
+								</div>
+								<div class="institution-name">Institute of Cosmos Sciences of the University of Barcelona (ICCUB)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Oleg Bulashenko</p>
+						<p><strong>Groups:</strong> GW group </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Virgo, ET and LISA; Instrumentation, stellar dynamics, Numerical Relativity, Nuclear Physics, data analysis and software engineering.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.iem.csic.es/index_i.html" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Institute for the Structure of Matter (IEM-CSIC) </div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Guillermo Antonio Mena Marugán</p>
+						<p><strong>Groups:</strong> Gravitation and Cosmology Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LISA, Einstein Telescope; theory</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ifae.es" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Institut de Física d’Altes Energies (IFAE)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Mario Martínez Pérez</p>
+						<p><strong>Groups:</strong> GW Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Virgo, LIGO, Einstein Telescope; Instrumentation, data analysis, theory, cosmology.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://ifca.unican.es/en-us" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Institute of Physics of Cantabria (IFCA-CSIC/UC)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: José María Diego Rodríguez</p>
+						<p><strong>Groups:</strong>  </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Einstein Telescope; primordial black holes, gravitational lensing of GWs.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://webific.ific.uv.es/web/en" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name"> Instituto de Física Corpuscular (IFIC-CSIC/UV)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Agustín Sánchez Losa</p>
+						<p><strong>Groups:</strong> Valencia Experimental Group of Astroparticles (VEGA)</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>ANTARES, KM3NeT, Einstein Telescope; multi-messenger astronomy with high-energy neutrinos and GWs.</p>
+						</div>
+					</div>
+					
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ift.uam-csic.es/en/front" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Institute for Theoretical Physics (IFT-CSIC/UAM)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Juan García-Bellido Capdevila</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Virgo, LISA and Einstein Telescope; cosmology, primordial black holes, data analysis.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://igfae.usc.es/igfae/en/" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Instituto Galego de Física de Altas Enerxías (IGFAE)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Thomas Dent</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LIGO, Einstein Telescope; data analysis, modeling, fundamental physics.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ua.es/en/" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">University of Alicante (UA)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Arthur Suvorov</p>
+						<p><strong>Groups:</strong> Relativistic Astrophysics Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LISA, Einstein Telescope; astrophysics of compact objects, fundamental physics with GWs.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.uca.es/?lang=en" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Universidad de Cádiz (UCA)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Ignacio Mateos Martín</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LISA; instrumentation.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ugr.es/en" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">University of Granada (UGR)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Mikael Chala</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LISA; theoretical cosmology.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.uib.eu" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">University of the Balearic Islands</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: David Benjamin Keitel</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LIGO, GEO600, Einstein Telescope, LISA; data analysis, numerical relativity, continuous waves searches.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.upc.edu/en?set_language=en" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Universitat Politècnica de Catalunya - BarcelonaTech (UPC)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: Juan Ramos Castro</p>
+						<p><strong>Groups:</strong> Space Science and Technology Research Group (CTE)</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>LISA Pathfinder, LISA; instrumentation</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.upm.es/internacional" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Technical University of Madrid (UPM)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: María Ester Ruiz Morales</p>
+						<p><strong>Groups:</strong> </p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Virgo, LISA, Einstein Telescope; data analysis, primordial black holes.</p>
+						</div>
+					</div>
+					
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.ehu.eus/en/en-home" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">University of the Basque Country (UPV/EHU)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: José Juan Blanco-Pillado</p>
+						<p><strong>Groups:</strong> The Early Universe Cosmology Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>NANOGrav, LISA, Einstein Telescope; cosmology, cosmic strings.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.usal.es" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">Universidad de Salamanca (USAL)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: María Ángeles Pérez García</p>
+						<p><strong>Groups:</strong> GW Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Einstein Telescope; modeling, multimessenger astronomy.</p>
+						</div>
+					</div>
+					
+					<div class="card institution-card">
+						<div class="institution-header">
+							<a href="https://www.uv.es/uvweb/college/en/university-valencia-1285845048380.html" target="_blank" rel="noopener noreferrer" class="institution-link">
+								<div class="institution-logo">
+									<i class="fas fa-cogs"></i>
+								</div>
+								<div class="institution-name">University of Valencia (UV)</div>
+							</a>
+						</div>
+						<p class="institution-pi">PI: José Antonio Font Roda</p>
+						<p><strong>Groups:</strong> Relativistic Astrophysics Group</p>
+						<div class="institution-members">
+							<strong>Projects/Research Focus:</strong>
+							<p>Virgo, LISA, Einstein Telescope; numerical relativity, data analysis.</p>
+						</div>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+		</section>
+		
+		<!-- Objectives Section -->
+		<section id="objectives">
+			<div class="content-section">
+				<h2 class="section-title">Network Objectives</h2>
+				
+				<div class="section-grid">
+					<div class="card">
+						<h3><i class="fas fa-chart-line card-icon"></i> Research Advancement</h3>
+						<p>Coordinate research efforts to maximize Spain's contribution to gravitational wave science through publications, conference participation, and data analysis.</p>
+					</div>
+					<div class="card">
+						<h3><i class="fas fa-graduation-cap card-icon"></i> Training & Education</h3>
+						<p>Develop training programs for early-career researchers and organize workshops and schools to share expertise across the network.</p>
+					</div>
+					<div class="card">
+						<h3><i class="fas fa-tools card-icon"></i> Technology Development</h3>
+						<p>Advance detector technologies for future gravitational wave observatories through collaborative R&D projects.</p>
+					</div>
+					<div class="card">
+						<h3><i class="fas fa-handshake card-icon"></i> International Collaboration</h3>
+						<p>Strengthen Spain's participation in global gravitational wave projects like LIGO, Virgo, and the future LISA and Einstein Telescope projects.</p>
+					</div>
+				</div>
+				
+				<div style="margin-top: 40px; background: rgba(26, 61, 122, 0.5); padding: 25px; border-radius: 10px; border: 1px solid rgba(74, 137, 220, 0.3);">
+					<h3 style="color: var(--accent); margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
+						<i class="fas fa-bullseye"></i> Strategic Goals
+					</h3>
+					<ul style="padding-left: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 15px;">
+						<li style="margin-bottom: 10px;">To support and enhance the current existing activities between Spanish groups with the aim to increase the impact on the frontier of GW science</li>
+						<li style="margin-bottom: 10px;">Develop Spanish contributions to the next generation of GW detectors: the Einstein Telescope project on the ground and the LISA mission in space</li>
+						<li style="margin-bottom: 10px;">To produce a roadmap document that will identify the main activities of the Spanish GW community and a concrete path towards maximizing its impact on ET and LISA</li>
+						<li style="margin-bottom: 10px;">Preparing the future of the Spanish GW community, within the international GW research context, by training the next generation of GW researchers</li>
+						<li style="margin-bottom: 10px;">Increase public awareness of gravitational wave science in Spain</li>
+						<li style="margin-bottom: 10px;">Foster industry partnerships for detector technology development</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Activities Section -->
+		<section id="activities">
+			<div class="content-section">
+				<h2 class="section-title">Network Activities</h2>
+				
+				<div class="timeline">
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> June 23-25, 2025</div>
+							<h3>Iberian Gravitational Wave Meeting</h3>
+							<p>CIEMAT, Madrid - All network members will gather to review progress, share research updates, and plan collaborative projects for the coming year.</p>
+						</div>
+					</div>
+					
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> September 15-16, 2025</div>
+							<h3>GW150914 anniversary</h3>
+							<p>University of the Balearic Islands (UIB), Palma de Mallorca - To celebrate the 10th anniversary of the GW150914 detection.</p>
+						</div>
+					</div>
+					
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> October 20-22, 2025</div>
+							<h3>LISA Spain Meeting</h3>
+							<p>CSIC main Campus, Madrid - To gather the Spanish community working in LISA to develop the Spanish contribution to the mission.</p>
+						</div>
+					</div>
+					
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> December 3rd, 2025</div>
+							<h3>Ten years of LISA Pathfinder</h3>
+							<p>Institute of Space Sciences - To celebrate and review the results of the LISA Pathfinder mission ten years after the launch.</p>
+						</div>
+					</div>
+					
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> MM DD, 202X</div>
+							<h3>Summer School on Gravitational Waves</h3>
+							<p>PLACE - Comprehensive training program for graduate students entering the field of gravitational wave astronomy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Materials Section -->
+		<section id="materials">
+			<div class="content-section">
+				<h2 class="section-title">Resources & Materials</h2>
+				
+				<div class="section-grid">
+					<div class="card">
+						<h3><i class="fas fa-book card-icon"></i> Publications</h3>
+						<p>Access our collection of network publications, preprints, and conference proceedings.</p>
+						<a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Browse Publications</a>
+					</div>
+					
+					<div class="card">
+						<h3><i class="fas fa-chalkboard card-icon"></i> Presentations</h3>
+						<p>Slides and recordings from network workshops, seminars, and conferences.</p>
+						<a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">View Presentations</a>
+					</div>
+					
+					<div class="card">
+						<h3><i class="fas fa-database card-icon"></i> Data & Software</h3>
+						<p>Open-source software tools and simulation data developed by network members.</p>
+						<a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Access Resources</a>
+					</div>
+					
+					<div class="card">
+						<h3><i class="fas fa-video card-icon"></i> Educational Material</h3>
+						<p>Lectures, tutorials, and outreach materials for students and the public.</p>
+						<a href="#" class="btn" style="margin-top: 15px; padding: 8px 20px; font-size: 0.9rem;">Explore Materials</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Contact Section -->
+		<section id="contact">
+			<div class="content-section">
+				<h2 class="section-title">Contact Us</h2>
+				
+				<form id="contactForm" 
+					action="https://formsubmit.co/el/yomoni" 
+					method="POST"
+					class="contact-form">
+					<!-- Required FormSubmit fields -->
+					<input type="hidden" name="_next" value="https://redongra.github.io/website/thanks.html">
+						<input type="hidden" name="_template" value="table">
+							<input type="hidden" name="_captcha" value="false">
 								
-									<form id="contactForm" 
-												action="https://formsubmit.co/redongra@zohomail.eu" 
-												method="POST"
-												class="contact-form">
-										<!-- Required FormSubmit fields -->
-									  <input type="hidden" name="_next" value="https://redongra.github.io/website/thanks.html">
-								    <input type="hidden" name="_template" value="table">
-								    <input type="hidden" name="_captcha" value="false">
-																				
-										<!-- Your existing fields -->
-										<input type="hidden" name="_subject" value="New contact from REDONGRA website">
-										<input type="hidden" name="_cc" value="redongra@zohomail.eu">
-										<input type="hidden" name="_replyto" id="reply-to">
-										
+								<!-- Your existing fields -->
+								<input type="hidden" name="_subject" value="New contact from REDONGRA website">
+									<input type="hidden" name="_replyto" id="reply-to">
 										<input type="hidden" name="_autoresponse" value="Thank you for contacting REDONGRA. We'll get back to you soon.">
-										<input type="hidden" name="_next" value="https://yourgithubusername.github.io/thanks.html">
-										
-										<div class="form-group">
+											
+											<div class="form-group">
 												<label for="name">Full Name *</label>
 												<input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
-										</div>
-										
-										<div class="form-group">
+											</div>
+											
+											<div class="form-group">
 												<label for="email">Email Address *</label>
 												<input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
-										</div>
-										
-										<div class="form-group">
+											</div>
+											
+											<div class="form-group">
 												<label for="institution">Institution/Affiliation</label>
 												<input type="text" id="institution" name="institution" class="form-control" placeholder="Enter your institution">
-										</div>
-										
-										<div class="form-group">
+											</div>
+											
+											<div class="form-group">
 												<label for="subject">Subject *</label>
-												<select id="subject" name="_subject" class="form-control" required>
-														<option value="">Select a subject</option>
-														<option value="Collaboration Inquiry">REDONGRA Inquiry</option>
-														<option value="Membership Information">REDONGRA Membership Information</option>
-														<option value="Event Information">Event Information</option>
-														<option value="Media Inquiry">Media Inquiry</option>
-														<option value="Other">Other</option>
+												<select id="subject" name="subject" class="form-control" required>
+													<option value="">Select a subject</option>
+													<option value="Collaboration Inquiry">REDONGRA Inquiry</option>
+													<option value="Membership Information">REDONGRA Membership Information</option>
+													<option value="Event Information">Event Information</option>
+													<option value="Media Inquiry">Media Inquiry</option>
+													<option value="Other">Other</option>
 												</select>
-										</div>
-										
-										<div class="form-group">
+											</div>
+											
+											<div class="form-group">
 												<label for="message">Message *</label>
 												<textarea id="message" name="message" class="form-control" placeholder="Type your message here" required></textarea>
-										</div>
-										
-										<button type="submit" class="submit-btn">Send Message</button>
-										
-										<div id="formFeedback" style="margin-top: 20px; text-align: center;"></div>
-								</form>
-						</div>
-				</section>
-		</main>
-    
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Red Española de Fisica de Ondas Gravitacionales (REDONGRA)</h3>
-                <p>The Spanish Network of Gravitational Wave Physics brings together research groups across Spain to advance gravitational wave science through collaboration and resource sharing.</p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 8px;"><a href="#home" style="color: var(--text-light); text-decoration: none;">Home</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#participants" style="color: var(--text-light); text-decoration: none;">Participants</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#objectives" style="color: var(--text-light); text-decoration: none;">Objectives</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#activities" style="color: var(--text-light); text-decoration: none;">Activities</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#materials" style="color: var(--text-light); text-decoration: none;">Materials</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-section">
-                <h3>Contact Information</h3>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope contact-icon"></i>
-                        <a href="mailto:redongra@zohomail.eu">redongra@zohomail.eu</a>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone contact-icon"></i>
-                        <a href="tel:+34937379788">+34 93 737 9788</a>
-                    </div>
-                    <div class="contact-item">
-                        <a href="https://www.ice.csic.es" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-map-marker-alt contact-icon"></i>
-                        </a>
-                        <address>
-                            Institute of Space Sciences,<br>
-                            Campus UAB, Carrer de Can Magrans s/n,<br>
-                            08193 Cerdanyola del Vallès, Spain
-                        </address>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Funding acknowledgment section -->
-        <div class="funding-section">
-            <img src="Figures/Horizontal-v1.1.png" alt="Funding acknowledgment" class="funding-img">
-            <p class="funding-text"><strong>The Spanish Gravitational Wave Network (REDONGRA) is a Strategic Network (RED2024-153735-E) funded by the Agencia Estatal de Investigación del Ministerio de Ciencia, Innovación y Universidades (MICIU/AEI/10.13039/501100011033)</strong></p>
-        </div>
-        
-        <div class="copyright">
-            <strong>&copy; 2025 Spanish Network of Gravitational Wave Physics (REDONGRA). All rights reserved.</strong>
-        </div>
-    </footer>
-    
-    <script>
-        // Create stars for background
-        const starsContainer = document.getElementById('stars');
-        const starCount = 150;
-        
-        for (let i = 0; i < starCount; i++) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-            
-            // Random position
-            const x = Math.random() * 100;
-            const y = Math.random() * 100;
-            star.style.left = `${x}%`;
-            star.style.top = `${y}%`;
-            
-            // Random size
-            const size = Math.random() * 3;
-            star.style.width = `${size}px`;
-            star.style.height = `${size}px`;
-            
-            // Random animation duration
-            const duration = 2 + Math.random() * 6;
-            star.style.setProperty('--duration', `${duration}s`);
-            
-            // Random opacity
-            star.style.opacity = 0.2 + Math.random() * 0.5;
-            
-            starsContainer.appendChild(star);
-        }
-        
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    navMenu.classList.remove('active');
-                }
-            });
-        });
-        
-        // Highlight active section in navigation
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('nav a');
-            
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (scrollY >= sectionTop - 100) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+											</div>
+											
+											<button type="submit" class="submit-btn">Send Message</button>
+											
+											<div id="formFeedback" style="margin-top: 20px; text-align: center;"></div>
+										</form>
+			</div>
+		</section>
+	</main>
+	
+	<!-- Footer -->
+	<footer>
+		<div class="footer-container">
+			<div class="footer-section">
+				<h3>Red Española de Fisica de Ondas Gravitacionales (REDONGRA)</h3>
+				<p>The Spanish Network of Gravitational Wave Physics brings together research groups across Spain to advance gravitational wave science through collaboration and resource sharing.</p>
+				<div class="social-links">
+					<a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+					<a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+					<a href="#" class="social-link"><i class="fab fa-github"></i></a>
+					<a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
+			
+			<div class="footer-section">
+				<h3>Quick Links</h3>
+				<ul style="list-style: none; padding-left: 0;">
+					<li style="margin-bottom: 8px;"><a href="#home" style="color: var(--text-light); text-decoration: none;">Home</a></li>
+					<li style="margin-bottom: 8px;"><a href="#participants" style="color: var(--text-light); text-decoration: none;">Participants</a></li>
+					<li style="margin-bottom: 8px;"><a href="#objectives" style="color: var(--text-light); text-decoration: none;">Objectives</a></li>
+					<li style="margin-bottom: 8px;"><a href="#activities" style="color: var(--text-light); text-decoration: none;">Activities</a></li>
+					<li style="margin-bottom: 8px;"><a href="#materials" style="color: var(--text-light); text-decoration: none;">Materials</a></li>
+				</ul>
+			</div>
+			
+			<div class="footer-section">
+				<h3>Contact Information</h3>
+				<div class="contact-info">
+					<div class="contact-item">
+						<i class="fas fa-envelope contact-icon"></i>
+						<a href="mailto:redongra@zohomail.eu">redongra@zohomail.eu</a>
+					</div>
+					<div class="contact-item">
+						<i class="fas fa-phone contact-icon"></i>
+						<a href="tel:+34937379788">+34 93 737 9788</a>
+					</div>
+					<div class="contact-item">
+						<a href="https://www.ice.csic.es" target="_blank" rel="noopener noreferrer">
+							<i class="fas fa-map-marker-alt contact-icon"></i>
+						</a>
+						<address>
+							Institute of Space Sciences,<br>
+							Campus UAB, Carrer de Can Magrans s/n,<br>
+							08193 Cerdanyola del Vallès, Spain
+						</address>
+					</div>
+				</div>
+			</div>
+		</div>
 		
-		<script>
-			// Contact form handling with FormSubmit
-			document.getElementById('contactForm').addEventListener('submit', async function(e) {
-					e.preventDefault();
-					const form = this;
-					const feedback = document.getElementById('formFeedback');
-					const submitBtn = form.querySelector('button[type="submit"]');
+		<!-- Funding acknowledgment section -->
+		<div class="funding-section">
+			<img src="Figures/Horizontal-v1.1.png" alt="Funding acknowledgment" class="funding-img">
+				<p class="funding-text"><strong>The Spanish Gravitational Wave Network (REDONGRA) is a Strategic Network (RED2024-153735-E) funded by the Agencia Estatal de Investigación del Ministerio de Ciencia, Innovación y Universidades (MICIU/AEI/10.13039/501100011033)</strong></p>
+		</div>
+		
+		<div class="copyright">
+			<strong>&copy; 2025 Spanish Network of Gravitational Wave Physics (REDONGRA). All rights reserved.</strong>
+		</div>
+	</footer>
+	
+	<script>
+		// Create stars for background
+		const starsContainer = document.getElementById('stars');
+		const starCount = 150;
+		
+		for (let i = 0; i < starCount; i++) {
+			const star = document.createElement('div');
+			star.classList.add('star');
+			
+			// Random position
+			const x = Math.random() * 100;
+			const y = Math.random() * 100;
+			star.style.left = `${x}%`;
+			star.style.top = `${y}%`;
+			
+			// Random size
+			const size = Math.random() * 3;
+			star.style.width = `${size}px`;
+			star.style.height = `${size}px`;
+			
+			// Random animation duration
+			const duration = 2 + Math.random() * 6;
+			star.style.setProperty('--duration', `${duration}s`);
+			
+			// Random opacity
+			star.style.opacity = 0.2 + Math.random() * 0.5;
+			
+			starsContainer.appendChild(star);
+		}
+		
+		// Mobile menu toggle
+		const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+		const navMenu = document.getElementById('navMenu');
+		
+		mobileMenuBtn.addEventListener('click', () => {
+			navMenu.classList.toggle('active');
+		});
+		
+		// Smooth scrolling for anchor links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+				
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					window.scrollTo({
+						top: target.offsetTop - 80,
+						behavior: 'smooth'
+					});
 					
-					submitBtn.disabled = true;
-					submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-					
-					try {
-							const response = await fetch(form.action, {
-									method: 'POST',
-									body: new FormData(form),
-									headers: {
-											'Accept': 'application/json'
-									}
-							});
-							
-							if (response.ok) {
-									feedback.innerHTML = `
-											<div style="color: var(--accent);">
-													<i class="fas fa-check-circle"></i> Message sent successfully!
-													You should receive a confirmation email shortly.
-											</div>`;
-									form.reset();
-							} else {
-									throw new Error('Submission failed');
-							}
-					} catch (error) {
-							feedback.innerHTML = `
-									<div style="color: #ff6b6b;">
-											<i class="fas fa-exclamation-circle"></i> Error: ${error.message}
-									</div>`;
-					} finally {
-							submitBtn.disabled = false;
-							submitBtn.innerHTML = 'Send Message';
-					}
+					// Close mobile menu if open
+					navMenu.classList.remove('active');
+				}
 			});
-		</script>
+		});
+		
+		// Highlight active section in navigation
+		window.addEventListener('scroll', () => {
+			const sections = document.querySelectorAll('section');
+			const navLinks = document.querySelectorAll('nav a');
+			
+			let current = '';
+			
+			sections.forEach(section => {
+				const sectionTop = section.offsetTop;
+				if (scrollY >= sectionTop - 100) {
+					current = section.getAttribute('id');
+				}
+			});
+			
+			navLinks.forEach(link => {
+				link.classList.remove('active');
+				if (link.getAttribute('href') === `#${current}`) {
+					link.classList.add('active');
+				}
+			});
+		});
+	</script>
+	
+	<script>
+		// Contact form handling with FormSubmit
+		document.getElementById('contactForm').addEventListener('submit', async function(e) {
+			e.preventDefault();
+			const form = this;
+			const feedback = document.getElementById('formFeedback');
+			const submitBtn = form.querySelector('button[type="submit"]');
+			
+			// Set reply-to dynamically
+			document.getElementById('reply-to').value = form.email.value;
+			
+			// Disable button during submission
+			submitBtn.disabled = true;
+			submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+			feedback.innerHTML = '';
+			
+			try {
+				// Create a copy of form data
+				const formData = new FormData(form);
+				
+				// Add subject to form data
+				const subject = form.querySelector('#subject').value;
+				formData.append('_subject', `REDONGRA Contact: ${subject}`);
+				
+				const response = await fetch(form.action, {
+					method: 'POST',
+					body: formData,
+					headers: {
+						'Accept': 'application/json'
+					}
+				});
+				
+				if (response.ok) {
+					feedback.innerHTML = `
+					<div style="color: var(--accent);">
+						<i class="fas fa-check-circle"></i> Thank you! Your message has been sent.
+						You should receive a confirmation email shortly.
+					</div>
+				`;
+				form.reset();
+				} else {
+					// Get detailed error message
+					let errorMessage = 'Form submission failed';
+					try {
+						const errorData = await response.json();
+						errorMessage = errorData.error || errorMessage;
+					} catch (parseError) {
+						errorMessage = `HTTP Error: ${response.status}`;
+					}
+					throw new Error(errorMessage);
+				}
+			} catch (error) {
+				console.error('Form submission error:', error);
+				feedback.innerHTML = `
+				<div style="color: #ff6b6b;">
+					<i class="fas fa-exclamation-circle"></i> Error: ${error.message || 'Failed to send message'}
+				</div>
+			`;
+			} finally {
+				submitBtn.disabled = false;
+				submitBtn.innerHTML = 'Send Message';
+			}
+		});
+	</script>
 </body>
 </html>
