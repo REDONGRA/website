@@ -1443,12 +1443,25 @@
 				// Set reply-to dynamically
 				document.getElementById('reply-to').value = form.email.value;
 				
+				// Get the selected subject from dropdown
+				const subject = form.querySelector('#subject').value;
+				form.querySelector('input[name="_subject"]').value = subject;
+				
 				// Disable button during submission
 				submitBtn.disabled = true;
 				submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
 				feedback.innerHTML = '';
 				
 				try {
+						// Add debug logging
+						console.log('Form data:', {
+								name: form.name.value,
+								email: form.email.value,
+								institution: form.institution.value,
+								subject: subject,
+								message: form.message.value
+						});
+
 						const response = await fetch(form.action, {
 								method: 'POST',
 								body: new FormData(form),
@@ -1465,11 +1478,16 @@
 										</div>
 								`;
 								form.reset();
+								
+								// Debug - check if Formspree has confirmed your email
+								console.log('Form submitted successfully. Check your email (' + form.email.value + ') for a confirmation request from Formspree.');
 						} else {
 								const error = await response.json();
+								console.error('Form submission error:', error);
 								throw new Error(error.error || 'Form submission failed');
 						}
 				} catch (error) {
+						console.error('Error:', error);
 						feedback.innerHTML = `
 								<div style="color: #ff6b6b;">
 										<i class="fas fa-exclamation-circle"></i> Error: ${error.message}
