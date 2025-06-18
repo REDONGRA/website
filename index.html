@@ -93,9 +93,25 @@
             animation: twinkle var(--duration, 4s) infinite ease-in-out;
         }
 			
-				.custom-link {
+				/*.custom-link {
 					color: white;
-				}
+				}*/
+			  .custom-link {
+					color: white;
+					text-decoration: none;
+					transition: color 0.3s ease;
+			  }
+			
+  			.custom-link:hover {
+					color: var(--accent);
+					text-decoration: underline;
+			  }
+
+			  /* This ensures the h3 inside the link maintains its styling */
+			  .custom-link h3 {
+					margin: 0;
+					color: inherit;
+			  }
         
         @keyframes twinkle {
             0%, 100% { opacity: 0.2; }
@@ -1170,7 +1186,7 @@
 					<div class="timeline-item">
 						<div class="timeline-content">
 							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> June 23-25, 2025</div>
-							<h3>Iberian Gravitational Wave Meeting</h3>
+							<a href="https://agenda.ciemat.es/event/4951/" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>Iberian Gravitational Wave Meeting</h3></a>
 							<p>CIEMAT, Madrid - All network members will gather to review progress, share research updates, and plan collaborative projects for the coming year.</p>
 						</div>
 					</div>
@@ -1178,7 +1194,7 @@
 					<div class="timeline-item">
 						<div class="timeline-content">
 							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> September 1-5, 2025</div>
-							<h3>Spanish & Portuguese Relativity Meeting (EREP 2025)</h3>
+							<a href="https://erep2025.uafg.ua.es/en" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>Spanish & Portuguese Relativity Meeting (EREP 2025)</h3></a>
 							<p>University of Alicante (UA), Alicante.</p>
 						</div>
 					</div>
