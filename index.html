@@ -287,11 +287,17 @@
             border: 1px solid rgba(74, 137, 220, 0.2);
         }
         
-        .section-grid {
+				.section-grid {
+						display: grid;
+						grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+						gap: 30px;
+				}
+
+/*			  .section-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-        }
+        }*/
         
         .card {
             background: rgba(26, 61, 122, 0.6);
@@ -644,6 +650,10 @@
             .timeline-content::after {
                 left: -50px !important;
             }
+						
+						.section-grid {
+								grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+						}
         }
         
         @media (max-width: 768px) {
@@ -771,11 +781,17 @@
 					<div class="card">
 						<h3><i class="fas fa-satellite card-icon"></i> Our Mission</h3>
 						<p>To establish Spain as a key contributor in Gravitational Wave research through coordinated efforts, resource sharing, and scientific collaboration.</p>
-					</div>
-					<div class="card">
+				</div>
+					
+				<div class="card" onclick="window.location.href='exchange-program.html';" style="cursor: pointer;">
+							<h3><i class="fas fa-users card-icon"></i> Collaboration</h3>
+							<p>We unite researchers from more than 20 institutions across Spain, fostering interdisciplinary approaches to Gravitational Wave science.</p>
+							<p style="color: var(--accent); margin-top: 10px; font-weight: 600;">Click to learn about our Exchange Program</p>
+				</div>					
+			<!--		<div class="card">
 						<h3><i class="fas fa-users card-icon"></i> Collaboration</h3>
-						<p>We unite researchers from more than 20 institutions across Spain, fostering interdisciplinary approaches to Gravitational Wave science.</p>
-					</div>
+						<p>We unite researchers from more than 20 institutions across Spain, fostering interdisciplinary approaches to Gravitational Wave science.</p> 
+					</div>!-->
 					<div class="card">
 						<h3><i class="fas fa-globe-europe card-icon"></i> Global Impact</h3>
 						<p>As partners in international projects like LIGO, Virgo, Einstein Telescope, LISA, and others, we aim at contributing to ground-breaking discoveries in Astrophysics, Cosmology, and Fundamental Physics.</p>
@@ -1182,14 +1198,29 @@
 			<div class="content-section">
 				<h2 class="section-title">Network Activities</h2>
 				
+				<div style="text-align: center; margin-top: 40px; margin-bottom: 40px">
+						<a href="past-activities.html" class="btn">View Past Activities</a>
+						<p> </p>
+				</div>
+				
 				<div class="timeline">
+					
+					
 					<div class="timeline-item">
 						<div class="timeline-content">
 							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> June 23-25, 2025</div>
-							<a href="https://agenda.ciemat.es/event/4951/" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>Iberian Gravitational Wave Meeting</h3></a>
+							<a href="https://agenda.ciemat.es/event/4951/" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>14th Iberian Gravitational Wave Meeting</h3></a>
 							<p>CIEMAT, Madrid - All network members will gather to review progress, share research updates, and plan collaborative projects for the coming year.</p>
 						</div>
 					</div>
+
+						<div class="timeline-item">
+							<div class="timeline-content">
+								<div class="timeline-date"><i class="fas fa-calendar-alt"></i> June 26, 2025</div>
+								<a href="https://agenda.ciemat.es/e/ai-gwm2025" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>Hands-on course in Explainable Artificial Intelligence</h3></a>
+								<p>CIEMAT, Madrid.</p>
+							</div>
+						</div>
 					
 					<div class="timeline-item">
 						<div class="timeline-content">
@@ -1202,15 +1233,23 @@
 					<div class="timeline-item">
 						<div class="timeline-content">
 							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> September 15-16, 2025</div>
-							<h3>GW150914 anniversary</h3>
+							<a href="https://grg.uib.es/10thAnniversaryGW150914/" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>GW150914 anniversary</h3></a>
 							<p>University of the Balearic Islands (UIB), Palma de Mallorca - To celebrate the 10th anniversary of the GW150914 detection.</p>
+						</div>
+					</div>
+
+					<div class="timeline-item">
+						<div class="timeline-content">
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> September 22, 2025</div>
+							<a href="https://indico.capa.unizar.es/event/39/" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>RENATA (Red Nacional de Astropartículas) Meeting</h3></a>
+							<p>Universidad de Zaragoza, Zaragoza.</p>
 						</div>
 					</div>
 					
 					<div class="timeline-item">
 						<div class="timeline-content">
 							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> October 23-24, 2025</div>
-							<h3>LISA Spain Meeting</h3>
+							<a href="https://indico.global/event/14607/" class="custom-link" target="_blank" rel="noopener noreferrer"><h3>LISA Spain Meeting</h3></a>
 							<p>CSIC main Campus, Madrid - To gather the Spanish community working in LISA to develop the Spanish contribution to the mission.</p>
 						</div>
 					</div>
