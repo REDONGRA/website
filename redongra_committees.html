@@ -3,7 +3,7 @@
 <head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>REDONGRA - Exchange Program</title>
+		<title>REDONGRA Committees</title>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 		<style>
 				/* Cosmic color scheme */
@@ -317,6 +317,50 @@
 			
 			.card-icon {
 					font-size: 1.5rem;
+			}
+
+			/* Committee specific */
+			.committee-description {
+				margin-bottom: 15px;
+			}
+			.committee-members {
+				margin-top: 15px;
+				padding-top: 15px;
+				border-top: 1px solid rgba(74, 137, 220, 0.2);
+			}
+			.member-list {
+				list-style: none;
+				padding-left: 0;
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 8px 16px;
+			}
+			.member-list li {
+				display: flex;
+				align-items: center;
+				gap: 8px;
+			}
+			.badge {
+				display: inline-block;
+				font-size: 0.75rem;
+				background: rgba(74, 137, 220, 0.2);
+				color: var(--text-light);
+				border: 1px solid rgba(74, 137, 220, 0.4);
+				padding: 2px 8px;
+				border-radius: 999px;
+			}
+
+			/* Bulleted lists (override member-list for specific cases) */
+			.bullet-list {
+				list-style: disc;
+				padding-left: 20px;
+				display: block;
+				gap: 0;
+			}
+			.bullet-list li {
+				display: list-item;
+				align-items: initial;
+				gap: 0;
 			}
 			
 			/* Institution Cards */
@@ -753,66 +797,109 @@
 		
 		<!-- Main Content -->
 		<main>
-				<section id="exchange-program">
+				<section id="committees">
 						<div class="content-section">
-								<h2 class="section-title">REDONGRA Exchange Program</h2>
-								
-								<div style="margin-bottom: 40px;">
-										<p>The REDONGRA Exchange Program supports and funds visits by young researchers (PhD students and postdocs) between node of the REDONGRA network. This program aims to:</p>
-										
-										<ul style="margin: 20px 0; padding-left: 20px;">
-												<li style="margin-bottom: 10px;">Foster collaboration between network members</li>
-												<li style="margin-bottom: 10px;">Facilitate knowledge transfer and skill development</li>
-												<li style="margin-bottom: 10px;">Encourage interdisciplinary research in gravitational wave physics</li>
-												<li style="margin-bottom: 10px;">Strengthen the Spanish gravitational wave community</li>
-										</ul>
-										
-										<h3 style="color: var(--accent); margin: 30px 0 15px;">Program Details</h3>
-										
-										<div class="section-grid" style="margin-bottom: 30px;">
-												<div class="card">
-														<h3><i class="fas fa-euro-sign card-icon"></i> Funding</h3>
-														<p>The program provides (partial) financial support for travel and accommodation expenses, with a maximum of €1,000 per visit.</p>
-												</div>
-												<div class="card">
-														<h3><i class="fas fa-calendar-alt card-icon"></i> Duration</h3>
-														<p>Visits typically last between 1 week and 1 month (maximum), with flexibility depending on the research needs.</p>
-												</div>
-												<div class="card">
-														<h3><i class="fas fa-user-graduate card-icon"></i> Eligibility</h3>
-														<p>Open to PhD students and postdocs (within 3 years of PhD completion) affiliated with REDONGRA institutions.</p>
-												</div>
+								<h2 class="section-title">REDONGRA Committees</h2>
+
+								<div class="section-grid">
+									<!-- Collaboration Meeting Program -->
+									<div class="card">
+										<h3><i class="fas fa-people-group card-icon"></i> Committee for the REDONGRA Collaboration Meeting Program</h3>
+										<p class="committee-description">
+											The main goal of the program is to support, both concerning coordination and financial support (co-funding is expected), the organization of meetings/workshops that are crucial for the participation of the REDONGRA groups in the different GW collaborations. We foresee future working group meetings of the different detector collaborations, as well as meetings on specific topics of current interest to the network, such as workshops on Machine Learning Methods or on Source modeling and data analysis for future detectors. <p>To apply use the form <a href="index.html#contact" style="color: var(--text-light)"><strong>HERE</strong></a> including the following information: 
+											  <ul class="member-list bullet-list">
+											     <li>Title of the meeting/activity</li>
+													 <li>Description (5-10 lines)</li>
+													 <li>(Tentative) dates</li>
+													 <li>Type of support expected from REDONGRA</li>
+													 </ul></p></p>
+										<div class="committee-members">
+											<strong>Members:</strong>
+											<ul class="member-list">
+												<li>Oleg Bulashenko</li>
+												<li>Guillermo Mena <span class="badge">Chair</span></li>
+												<li>Mario Martínez</li>
+												<li>Mikel Chala</li>
+												<li>Juan Ramos</li>
+												<li>Toni Font</li>
+											<ul>
 										</div>
-										
-										<h3 style="color: var(--accent); margin: 30px 0 15px;">Application Process</h3>
-										<p>To apply, please send an email containing the following information:</p>
-										
-										<div class="requirements" style="background: rgba(26, 61, 122, 0.6); padding: 20px; border-radius: 10px; margin: 20px 0; border: 1px solid rgba(74, 137, 220, 0.3);">
-												<h4 style="color: var(--accent); margin-top: 0;">Required Information:</h4>
-												<ul>
-														<li><strong>Full Name</strong></li>
-														<li><strong>Email Address</strong></li>
-														<li><strong>Current Position</strong> (PhD Student/Postdoc)</li>
-														<li><strong>Home Institution</strong></li>
-														<li><strong>Host Institution</strong> (from REDONGRA network)</li>
-														<li><strong>Proposed Visit Dates</strong></li>
-														<li><strong>Host Supervisor Name</strong></li>
-														<li><strong>Purpose of Visit</strong> (max 500 words)</li>
-														<li><strong>Estimated Budget and asked REDONGRA support</strong> (max €1,500)</li>
-														<li><strong>Attached CV</strong> (PDF format)</li>
-												</ul>
+									</div>
+
+									<!-- Exchange Program -->
+									<div class="card">
+										<h3><i class="fas fa-right-left card-icon"></i> Committee for the REDONGRA Exchange Program</h3>
+										<p class="committee-description">
+											This program, mainly oriented toward young researchers, will support short visits (maximum 30 days) of members of the REDONGRA groups to other REDONGRA nodes. There will be two openings for applying for support for such visits (some level of co-funding is expected). The selection will be based on scientific merit. The interested researchers can apply following the information <a href="exchange-program.html" class="custom-link"><strong>HERE</strong></a>.
+										</p>
+										<div class="committee-members">
+											<strong>Members:</strong>
+											<ul class="member-list">
+												<li>Josefa Becerra</li>
+												<li>José María Diego</li>
+												<li>Thomas Dent <span class="badge">Chair</span></li>
+												<li>UIB member — TBA</li>
+												<li>Ester Ruiz</li>
+											</ul>
 										</div>
-										
-										<div style="text-align: center; margin-top: 40px;">
-											<a href="mailto:redongra_info@listas.csic.es?subject=REDONGRA%20Exchange%20Program%20Application&body=Full%20Name%3A%20%0D%0A%0D%0AEmail%3A%20%0D%0A%0D%0ACurrent%20Position%3A%20%0D%0A%0D%0AHome%20Institution%3A%20%0D%0A%0D%0AHost%20Institution%3A%20%0D%0A%0D%0AProposed%20Visit%20Dates%3A%20%0D%0A%0D%0AHost%20Supervisor%20Name%3A%20%0D%0A%0D%0APurpose%20of%20Visit%3A%20%0D%0A%0D%0AEstimated%20Budget%20and%20asked%20REDONGRA%20support%3A%20%0D%0A%0D%0APlease%20attach%20your%20CV%20below." 
-												 class="btn" 
-												 style="display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
-													<i class="fas fa-paper-plane"></i> Apply via Email
-											</a>
-											<p style="margin-top: 15px; color: var(--star-glow); font-size: 0.9em;">
-														<i class="fas fa-info-circle"></i> Clicking will open your default email client with a pre-filled template
-												</p>
+									</div>
+
+									<!-- IGWM + ISGWP -->
+									<div class="card">
+										<h3><i class="fas fa-calendar-days card-icon"></i> Committee for the organization of the IGWM + ISGWP Events</h3>
+										<p class="committee-description">
+											Organization of the yearly Iberian Gravitational Wave Meeting (IGWM) and of a yearly International School on Gravitational Wave Physics (ISGWP). The two activities will be scheduled within the same time frame to optimize resources and ensure the attendance of young researchers, as well as attracting leading figures in the field.
+										</p>
+										<p class="committee-description">
+											The ISGWP will consist in a series of lectures, mainly addressed to PhD students and young postdocs, and hands-on sessions covering all relevant aspects of GW science (instrumentation, simulations, data analysis algorithms, theory), to be delivered by internationally recognized experts.   
+										</p>
+										<div class="committee-members">
+											<strong>Members:</strong>
+											<ul class="member-list">
+												<li>Carlos F. Sopuerta <span class="badge">Chair</span></li>
+												<li>Mario Martínez</li>
+												<li>Juan García-Bellido</li>
+												<li>Ernesto Contreras</li>
+												<li>David Keitel</li>
+												<li>José Juan Blanco-Pillado</li>
+												<li>María Ángeles Pérez</li>
+												<li>Pablo García</li>
+											</ul>
 										</div>
+									</div>
+
+									<!-- DEI-Outreach -->
+									<div class="card">
+										<h3><i class="fas fa-bullhorn card-icon"></i> DEI-Outreach Committee</h3>
+										<p class="committee-description">
+											Many of the groups involved in REDONGRA carry out successful public outreach programs, targeting both their local communities and increasing their national visibility through national media. REDONGRA will coordinate public announcements among groups participating in large detector collaborations, to highlight collaboration on the national level and the involvement of Spanish groups in breakthrough discoveries and in preparing next generation observatories. REDONGRA will also produce high quality printed and electronic outreach media.
+										</p>
+										<div class="committee-members">
+											<strong>Members:</strong>
+											<ul class="member-list">
+												<li>Pablo García <span class="badge">Chair</span></li>
+												<li>María Caballero</li>
+												<li>Agustín Sánchez</li>
+												<li>Ignacio Mateos Martín</li>
+												<li>Ester Ruiz</li>
+												<li>Isabel Cordero</li>
+											</ul>
+										</div>
+									</div>
+
+									<!-- Roadmap -->
+									<div class="card">
+										<h3><i class="fas fa-map card-icon"></i> Roadmap Committee</h3>
+										<p class="committee-description">
+											An important outcome of the REDONGRA network will be a roadmap document that will identify the main activities of the Spanish GW community and a concrete path towards maximizing its impact on current and future gravitational wave detectors.
+										</p>
+										<div class="committee-members">
+											<strong>Members:</strong>
+											<ul class="member-list">
+												<li>All REDONGRA members + invited experts in areas of interest</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 						</div>
 				</section>
@@ -917,7 +1004,7 @@
 						navMenu.classList.toggle('active');
 				});
 				
-				// Smooth scrolling for anchor links
+				// Smooth scrolling for anchor links on this page
 				document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 						anchor.addEventListener('click', function(e) {
 								e.preventDefault();
@@ -935,8 +1022,8 @@
 						});
 				});
 				
-				// Highlight active section in navigation
-				window.addEventListener('scroll', () => {
+				// Highlight active section in navigation (only for local sections if present)
+			     	window.addEventListener('scroll', () => {
 						const sections = document.querySelectorAll('section');
 						const navLinks = document.querySelectorAll('nav a');
 						
@@ -955,61 +1042,6 @@
 										link.classList.add('active');
 								}
 						});
-				});
-				
-				// Exchange form handling
-				document.getElementById('exchangeForm').addEventListener('submit', async function(e) {
-						e.preventDefault();
-						const form = this;
-						const feedback = document.getElementById('exchangeFeedback');
-						const submitBtn = form.querySelector('button[type="submit"]');
-						
-						// Set reply-to dynamically to user's email
-						document.getElementById('reply-to-ex').value = form.email.value;
-						
-						// Disable button during submission
-						submitBtn.disabled = true;
-						submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
-						feedback.innerHTML = '';
-						
-						try {
-								const response = await fetch(form.action, {
-										method: 'POST',
-										body: new FormData(form),
-										headers: {
-												'Accept': 'application/json'
-										}
-								});
-								
-								if (response.ok) {
-										feedback.innerHTML = `
-												<div style="color: var(--accent);">
-														<i class="fas fa-check-circle"></i> Thank you! Your application has been submitted.
-												</div>
-										`;
-										form.reset();
-								} else {
-										// Get detailed error message
-										let errorMessage = 'Form submission failed';
-										try {
-												const errorData = await response.json();
-												errorMessage = errorData.error || errorMessage;
-										} catch (parseError) {
-												errorMessage = `HTTP Error: ${response.status}`;
-										}
-										throw new Error(errorMessage);
-								}
-						} catch (error) {
-								console.error('Form submission error:', error);
-								feedback.innerHTML = `
-										<div style="color: #ff6b6b;">
-												<i class="fas fa-exclamation-circle"></i> Error: ${error.message || 'Failed to submit application'}
-										</div>
-								`;
-						} finally {
-								submitBtn.disabled = false;
-								submitBtn.innerHTML = 'Submit Application';
-						}
 				});
 		</script>
 </body>
